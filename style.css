@@ -1,0 +1,135 @@
+:root{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 20% bottom 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* Styling the main card */
+main{
+    width: 440px;
+    height: 700px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 13px 15px 4px rgba(0,0,0,0.10)
+}
+/* Top image */
+header{
+    height: 220px;
+    width: 440px;
+    background-image: url(./images/illustration-hero.svg);
+    border-radius: 15px 15px 0 0;
+}
+/* Below image */
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+h1{
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    font-weight: 900;
+}
+article > p{
+    font-size: 1.6rem;
+    color: hsl(224, 23%, 55%);
+    width: 280px;
+    text-align: center;
+}
+/* Annual plan */
+section{
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    width: 360px;
+    height: 100px;
+    justify-content: space-between;
+    border-radius: 15px;
+    
+}
+section img{
+    height: 50px;
+    
+}
+section:not(div){
+    padding: 25px;
+}
+/* Center content */
+div{
+    font-size: 1.6rem;
+}
+div p{
+    color: hsl(224, 23%, 55%);
+}
+.centerContent{
+    display: flex;
+    margin-left: -85px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Change button */
+section button{
+    font-size: 1.4rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+    }
+section button:hover{
+        color: purple;
+    }
+button{
+        border: none;
+        background-color: transparent;
+    }
+button:hover{
+    transition-delay: 80ms;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* buttons at the bottom */
+article>button{
+    width: 360px;
+    height: 50px;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+article>button:nth-of-type(1){
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 13px 15px 4px rgba(0,0,0,0.18);
+}
+article>button:nth-of-type(1):hover{
+    background-color: purple;
+}
+article>button:nth-of-type(2){
+    margin: -2rem 0 4rem 0;
+    color: hsl(224, 23%, 55%);
+
+}
+article>button:nth-of-type(2):hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+/* Layout
+The designs were created to the following widths:
+
+Mobile: 375px
+Desktop: 1440px
